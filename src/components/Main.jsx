@@ -1,11 +1,18 @@
 import React, { Component } from 'react'
 import Child from './Child'
 import Counter from './Counter'
+import CounterUsingFunction from './CounterUsingFunction'
 import Extents from './Extents'
 import Form from './Form'
+import FormUsingUseState from './FormUsingUseState'
 import LifeCycleA from './LifeCycleA'
 import Mystate from './Mystate'
 import ParentCom from './ParentCom'
+import ParentComponent from './ParentComponent'
+import ParentFocus from './ParentFocus'
+import ParetnFRInput from './ParetnFRInput'
+import RefDemo from './RefDemo'
+import { UseStateUsingArr } from './UseStateUsingArr'
 
 export default class Main extends Component {
     render() {
@@ -24,7 +31,15 @@ export default class Main extends Component {
 
                 {/* <ParentCom /> */}
                 {/* <Form /> */}
-                <LifeCycleA />
+                {/* <LifeCycleA /> */}
+                {/* <ParentComponent /> */}
+                {/* <RefDemo /> */}
+                {/* <ParentComponent /> */}
+                {/* <ParentFocus /> */}
+                {/* <ParetnFRInput /> */}
+                {/* <CounterUsingFunction /> */}
+                {/* <FormUsingUseState /> */}
+                <UseStateUsingArr />
             </>
 
 
