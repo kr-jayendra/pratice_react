@@ -2,11 +2,14 @@ import React, { Component } from 'react'
 import Child from './Child'
 import Counter from './Counter'
 import Extents from './Extents'
+import Form from './Form'
+import LifeCycleA from './LifeCycleA'
 import Mystate from './Mystate'
 import ParentCom from './ParentCom'
 
 export default class Main extends Component {
     render() {
+        console.log("🚀 ~ file: Main.jsx:11 ~ Main")
         return (
             <>
                 {/* <Extents name="jayendra" score={45} profile="meta-physics" >
@@ -19,7 +22,9 @@ export default class Main extends Component {
 
                 {/* <Counter /> */}
 
-                <ParentCom />
+                {/* <ParentCom /> */}
+                {/* <Form /> */}
+                <LifeCycleA />
             </>
 
 

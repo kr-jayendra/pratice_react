@@ -12,6 +12,7 @@ export default class Child extends Component {
                 <div>{name}</div>
                 <div>{age}</div>
                 <div>{des}</div>
+                <div>{age}</div>
             </>
         )
     }
