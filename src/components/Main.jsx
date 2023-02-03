@@ -18,9 +18,25 @@ import ParentComponent from './ParentComponent'
 import ParentFocus from './ParentFocus'
 import ParetnFRInput from './ParetnFRInput'
 import RefDemo from './RefDemo'
+import UseConUse from './UseConUse'
+import UseReduceEx from './UseReduceEx'
 import { UseStateUsingArr } from './UseStateUsingArr'
 
 export default class Main extends Component {
+
+    constructor(props){
+        super(props)
+        this.state = {
+            c : ''
+        }
+    }
+    searchText(country){
+        this.setState({
+            c:country
+        },()=>{
+            console.log(this.state.c);
+        })
+    }
     render() {
         console.log("🚀 ~ file: Main.jsx:11 ~ Main")
         return (
@@ -52,8 +68,11 @@ export default class Main extends Component {
                 {/* <HookMouseMove /> */}
                 {/* <MouseContainer /> */}
                 {/* <CounterUseEffect /> */}
-                <Navbar />
-                <FetchingData />
+                {/* <Navbar /> */}
+                {/* <FetchingData /> */}
+                {/* <CompC /> */}
+                {/* <UseConUse /> */}
+                <UseReduceEx />
             </>
 
 

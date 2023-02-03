@@ -2,7 +2,14 @@ import React, { useState } from "react";
 
 const Navbar = (props) => {
   const [text, setText] = useState("");
-    
+
+  const change = (e) =>{
+    setText(e.target.value,()=>{
+        console.log(text)
+        props.searchText(text)
+    });
+
+  }
   return (
     <>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -72,9 +79,10 @@ const Navbar = (props) => {
               <input
                 class="form-control me-2"
                 type="search"
+                value={text}
                 placeholder="Search"
                 aria-label="Search"
-                onChange={(e) => setText(e.target.value)}
+                onChange={(e) => change(e)}
               />
               <button class="btn btn-outline-success" type="submit">
                 Search
