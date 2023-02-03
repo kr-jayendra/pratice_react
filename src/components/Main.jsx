@@ -1,12 +1,18 @@
 import React, { Component } from 'react'
 import Child from './Child'
 import Counter from './Counter'
+import CounterUseEffect from './CounterUseEffect'
+import { CounterUseState } from './CounterUseState'
 import CounterUsingFunction from './CounterUsingFunction'
 import Extents from './Extents'
+import FetchingData from './FetchingData'
 import Form from './Form'
 import FormUsingUseState from './FormUsingUseState'
+import { HookMouseMove } from './HookMouseMove'
 import LifeCycleA from './LifeCycleA'
+import { MouseContainer } from './MouseContainer'
 import Mystate from './Mystate'
+import Navbar from './Navbar'
 import ParentCom from './ParentCom'
 import ParentComponent from './ParentComponent'
 import ParentFocus from './ParentFocus'
@@ -39,7 +45,15 @@ export default class Main extends Component {
                 {/* <ParetnFRInput /> */}
                 {/* <CounterUsingFunction /> */}
                 {/* <FormUsingUseState /> */}
-                <UseStateUsingArr />
+                {/* <UseStateUsingArr /> */}
+                {/* <Counter /> */}
+                {/* <CounterUseState /> */}
+                {/* <Counter /> */}
+                {/* <HookMouseMove /> */}
+                {/* <MouseContainer /> */}
+                {/* <CounterUseEffect /> */}
+                <Navbar />
+                <FetchingData />
             </>
 
 
