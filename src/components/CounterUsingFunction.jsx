@@ -2,6 +2,16 @@ import React, { useState } from 'react'
 
 function CounterUsingFunction() {
     const [count, setCount] = useState(0);
+
+    const increment = ()=>{
+        setCount(p => p + 1)
+    }
+    const decrement = ()=>{
+        setCount((prev) => { if (prev != 0) return prev - 1; return 0;})
+    }
+    const reset = () => {
+        setCount(0);
+    }
     return (
         <>
             <h1>{count}</h1>

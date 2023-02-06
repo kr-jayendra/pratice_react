@@ -9,6 +9,7 @@ const FetchDataUsingState = () => {
 
     useEffect(()=>{
 
+        // when data fetch (GET  request) using axios 
         axios.get('https://jsonplaceholder.typicode.com/posts/1')
         .then((res)=>{
             setLoading(false);

@@ -7,13 +7,14 @@ const initalState = {
     error: ""
 }
 
+// reducer function 
 const reducer = (state,action) => {
 
     switch(action.type){
         case "FETCH_SUCCESS":
             return {
                 loading : false,
-                post : action.payload,
+                post : action.payload,  //after fetch the data store the post state 
                 error : ''
             }
         
@@ -37,7 +38,7 @@ const FetchDataUsingReducer = () => {
         axios.get("https://jsonplaceholder.typicode.com/posts")
         .then((res)=>{
             console.log(res.data)
-            dispatch({type: "FETCH_SUCCESS",payload : res.data})
+            dispatch({type: "FETCH_SUCCESS",payload : res.data})    //when data successfully fetch the data
         })
         .catch((err)=>{
             console.log(err)
@@ -50,6 +51,7 @@ const FetchDataUsingReducer = () => {
       <ul>{state.loading ? "Loding"  : state.post.map((e)=>{
         return <li>{e.title}</li>
       })}</ul>
+      <div>{state.error ? state.error : null}</div>
     </>
   );
 };

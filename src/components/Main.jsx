@@ -3,7 +3,7 @@ import FetchDataUsingReducer from '../FetchData/FetchDataUsingReducer'
 import FetchDataUsingState from '../FetchData/FetchDataUsingState'
 import Child from './Child'
 import Pract from './ContextWithReducer/Pract'
-import Counter from './Counter'
+// import Counter from './Counter'
 import CounterUseEffect from './CounterUseEffect'
 import { CounterUseState } from './CounterUseState'
 import CounterUsingFunction from './CounterUsingFunction'
@@ -20,12 +20,19 @@ import ParentCom from './ParentCom'
 import ParentComponent from './ParentComponent'
 import ParentFocus from './ParentFocus'
 import ParetnFRInput from './ParetnFRInput'
+import PerOptissue from './ReactMemo/PerOptissue'
 import RefDemo from './RefDemo'
 import UseConUse from './UseConUse'
+import IsEven from './UseMemo/IsEven'
 import UseReduceEx from './UseReduceEx'
 import UseReduceEx2 from './UseReducerEx2'
+import FocusInput from './UseRef/FocusInput'
 import { UseStateUsingArr } from './UseStateUsingArr'
-
+// import Counter from './UseRef/PlayPause'
+import PlayPause from './UseRef/PlayPause'
+import { ClickTitleChange } from './CustomHook/ClickTitleChange'
+import CustomCounter from './CustomHook/CustomCounter'
+import UserForm from './CustomHook/UserForm'
 export default class Main extends Component {
 
     constructor(props){
@@ -80,7 +87,15 @@ export default class Main extends Component {
                 {/* <UseReduceEx2 /> */}
                 {/* <Pract /> */}
                 {/* <FetchDataUsingState /> */}
-                <FetchDataUsingReducer />
+                {/* <FetchDataUsingReducer /> */}
+                {/* <PerOptissue /> */}
+                {/* <IsEven /> */}
+                {/* <FocusInput /> */}
+                {/* <Counter /> */}
+                {/* <PlayPause /> */}
+                {/* <ClickTitleChange /> */}
+                {/* <CustomCounter /> */}
+                <UserForm />
             </>
 
 
