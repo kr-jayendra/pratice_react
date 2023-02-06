@@ -38,20 +38,6 @@
   }
 }
 
-.btn{
-  margin: 20px;
-  font-size: 2rem;
-  /* width: 100px; 
-  padding: 20px;
-  border: none;
-  border-radius: 30px ;
-}
-
-.btn:hover{
-  cursor: pointer;
-  color: white;
-  background-color: black;
-}
 
 .head2{
   
@@ -66,3 +52,18 @@
   margin: auto;
 } 
  */
+
+ .btnClass{
+  margin: 20px;
+  font-size: 2rem;
+  /* width: 100px;  */
+  padding: 20px;
+  border: none;
+  border-radius: 30px ;
+}
+
+.btnClass:hover{
+  cursor: pointer;
+  color: white;
+  background-color: black;
+}

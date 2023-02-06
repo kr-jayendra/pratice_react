@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
+import FetchDataUsingReducer from '../FetchData/FetchDataUsingReducer'
+import FetchDataUsingState from '../FetchData/FetchDataUsingState'
 import Child from './Child'
+import Pract from './ContextWithReducer/Pract'
 import Counter from './Counter'
 import CounterUseEffect from './CounterUseEffect'
 import { CounterUseState } from './CounterUseState'
@@ -20,6 +23,7 @@ import ParetnFRInput from './ParetnFRInput'
 import RefDemo from './RefDemo'
 import UseConUse from './UseConUse'
 import UseReduceEx from './UseReduceEx'
+import UseReduceEx2 from './UseReducerEx2'
 import { UseStateUsingArr } from './UseStateUsingArr'
 
 export default class Main extends Component {
@@ -72,7 +76,11 @@ export default class Main extends Component {
                 {/* <FetchingData /> */}
                 {/* <CompC /> */}
                 {/* <UseConUse /> */}
-                <UseReduceEx />
+                {/* <UseReduceEx /> */}
+                {/* <UseReduceEx2 /> */}
+                {/* <Pract /> */}
+                {/* <FetchDataUsingState /> */}
+                <FetchDataUsingReducer />
             </>
 
 
