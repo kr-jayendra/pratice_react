@@ -1,16 +1,15 @@
-import React ,{useContext}from "react";
+import React, { useContext } from "react";
 import { UserContext, mailContext } from "../App";
 
 const CompF = () => {
-
-  const user = useContext(UserContext)
-  const mail = useContext(mailContext)
+  const user = useContext(UserContext);
+  const mail = useContext(mailContext);
 
   return (
     <>
       {user} - {mail}
     </>
-  )
+  );
   // return (
   //   <>
   //     <UserContext.Consumer>

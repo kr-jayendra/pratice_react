@@ -8,17 +8,20 @@ const CompD = () => {
       <div>CompD</div>
       <button
         className="btn"
-        onClick={() => counter.counterDispatch({type: "incrementd"})}
+        onClick={() => counter.counterDispatch({ type: "incrementd" })}
       >
         Increment
       </button>
       <button
         className="btn"
-        onClick={() => counter.counterDispatch({type: "decrementd"})}
+        onClick={() => counter.counterDispatch({ type: "decrementd" })}
       >
         Decrement
       </button>
-      <button className="btn" onClick={() => counter.counterDispatch({type : "reset"})}>
+      <button
+        className="btn"
+        onClick={() => counter.counterDispatch({ type: "reset" })}
+      >
         Rest
       </button>
     </>

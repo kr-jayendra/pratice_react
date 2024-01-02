@@ -76,7 +76,9 @@ export default class Counter extends Component {
   render() {
     return (
       <>
-        <h2>X : {this.state.x} And Y : {this.state.y}</h2>
+        <h2>
+          X : {this.state.x} And Y : {this.state.y}
+        </h2>
         <input
           value={this.state.change}
           onChange={(e) => this.setState({ change: e.target.value })}

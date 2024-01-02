@@ -1,17 +1,19 @@
 import React from "react";
-import "../css/card.css"
+import "../css/card.css";
 const Card = (props) => {
   // console.log(props)
   return (
     // <div>Card</div>
     <>
-      <div className="card cards" style={{width: "18rem"}}>
+      <div className="card cards" style={{ width: "18rem" }}>
         <img src={props.country.flags.png} className="card-img-top" alt="..." />
-        <div className="card-body">
+        <div className="card-body">      
           <h5 className="card-title">{props.country.name.common}</h5>
         </div>
         <ul className="list-group list-group-flush">
-          <li className="list-group-item">Population : {props.country.population}</li>
+          <li className="list-group-item">
+            Population : {props.country.population}
+          </li>
         </ul>
         <div className="card-body">
           <a

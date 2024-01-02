@@ -1,7 +1,7 @@
 import React from "react";
 
-const Button = ({handleclick,children}) => {
-    console.log('Rendering button - ',children)
+const Button = ({ handleclick, children }) => {
+  console.log("Rendering button - ", children);
   return (
     <>
       <button onClick={handleclick}>{children}</button>
@@ -9,4 +9,4 @@ const Button = ({handleclick,children}) => {
   );
 };
 
-export default React.memo(Button)
+export default React.memo(Button);

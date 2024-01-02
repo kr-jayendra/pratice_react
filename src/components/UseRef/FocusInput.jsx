@@ -1,16 +1,15 @@
 import React, { useEffect, useRef } from "react";
 
 const FocusInput = () => {
+  const inputref = useRef(null);
 
-    const inputref = useRef(null);
-
-    useEffect(()=>{
-        inputref.current.focus();
-    },[])
+  useEffect(() => {
+    inputref.current.focus();
+  }, []);
   return (
     <>
       <div>FocusInput</div>
-      <input ref={inputref}/>
+      <input ref={inputref} />
     </>
   );
 };

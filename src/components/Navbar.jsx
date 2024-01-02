@@ -3,13 +3,12 @@ import React, { useState } from "react";
 const Navbar = (props) => {
   const [text, setText] = useState("");
 
-  const change = (e) =>{
-    setText(e.target.value,()=>{
-        console.log(text)
-        props.searchText(text)
+  const change = (e) => {
+    setText(e.target.value, () => {
+      console.log(text);
+      props.searchText(text);
     });
-
-  }
+  };
   return (
     <>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">

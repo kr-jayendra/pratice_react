@@ -1,9 +1,12 @@
 import React, { useReducer } from "react";
 
+// inital state 
 const initalState = {
   fc: 0,
   sc: 10,
 };
+// reduce function 
+// which contents the state and action
 const reducer = (state, action) => {
   switch (action.type) {
     case "increment":

@@ -5,16 +5,16 @@ import Card from "./Card";
 // https://jsonplaceholder.typicode.com/posts
 const FetchingData = () => {
   const [data, setData] = useState([]);
-  const [id,setId] = useState(0);
+  const [id, setId] = useState(0);
 
   useEffect(() => {
     axios.get("https://restcountries.com/v3.1/all").then((res) => {
-    //   console.log(res);
+      //   console.log(res);
       setData(res.data);
     });
   }, []);
 
-//   console.log(data);
+  //   console.log(data);
   return (
     <>
       <div className="list">

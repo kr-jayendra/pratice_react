@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function ChildFun(props) {
-  return (
-    <button onClick={props.parentpro}>Click</button>
-  )
+  return <button onClick={props.parentpro}>Click</button>;
 }
 
-export default ChildFun
+export default ChildFun;
